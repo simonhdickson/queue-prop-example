@@ -38,7 +38,10 @@ where TCommand: Into<Box<Command<TActual, TModel>>> {
 }
 
 // Queue Implementation
-
+// This queue implementation is actually fundamentally wrong because it uses a
+// Vector as the the underlying data store even though it doesn't work like a queue
+// and our model doesn't detect this yet. At somepoint I'll add another property
+// that shows why this is wrong, for now just pretend it works.
 
 #[derive(Clone)]
 struct Queue<T> {
