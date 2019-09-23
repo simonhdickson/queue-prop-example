@@ -1,10 +1,10 @@
 [package]
 name = "queue-prop"
 version = "0.1.0"
-authors = ["Simon Dickson <simon@simonhdickson.com>"]
+authors = ["Simon Dickson <simonhdickson@users.noreply.github.com>"]
+edition = "2018"
 
 [dependencies]
-quickcheck = "*"
-quickcheck_derive = "*"
-rand = "*"
-rand_derive = "*"
+quickcheck = "0.6"
+rand = "0.4"
+rand_derive = "0.3"
